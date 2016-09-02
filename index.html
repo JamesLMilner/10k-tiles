@@ -5,7 +5,7 @@
 
         html,
         body,
-        #content {
+        #tiles {
             width: 100%;
             height: 100%;
             overflow: hidden;
@@ -15,7 +15,7 @@
         body {
             animation: spin 100s linear infinite, colors 8s ease-out infinite;
         }
-        #content {
+        #tiles {
             opacity: 0.8
         }
         @-webkit-keyframes spin {
@@ -156,7 +156,7 @@
                 /* IE 10, Fx 16+, Op 12.1+ */
             }
         }
-        .box {
+        .tile {
             position: relative;
             display: inline-block;
             float: left;
@@ -164,7 +164,7 @@
             height: 50%;
             animation: colors 20s linear infinite;
         }
-        .square:hover {
+        .hover:hover {
             animation: grow 10s linear infinite;
             z-index: 100;
         }
@@ -181,7 +181,7 @@
             75% {
                 background-color: #ff6f69;
                 border-radius: 45%;
-                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                tile-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             }
             100% {
                 background-color: #ffcc5c;
@@ -202,7 +202,7 @@
             75% {
                 background-color: #ff6f69;
                 border-radius: 45%;
-                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                tile-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             }
             100% {
                 background-color: #ffcc5c;
@@ -219,61 +219,61 @@
   </head>
 
   <body>
-    <div id="content">
+    <div id="t">
       <div id="left">
-        <div class="box box-inner">
-          <div class="box square"></div>
-          <div class="box square"></div>
-          <div class="box square"></div>
-          <div class="box square"></div>
+        <div class="tile tile-inner">
+          <div class="tile hover"></div>
+          <div class="tile hover"></div>
+          <div class="tile hover"></div>
+          <div class="tile hover"></div>
         </div>
-        <div class="box box-inner">
-          <div class="box square"></div>
-          <div class="box square"></div>
-          <div class="box square"></div>
-          <div class="box square"></div>
+        <div class="tile tile-inner">
+          <div class="tile hover"></div>
+          <div class="tile hover"></div>
+          <div class="tile hover"></div>
+          <div class="tile hover"></div>
         </div>
-        <div class="box box-inner">
-          <div class="box square"></div>
-          <div class="box square"></div>
-          <div class="box square"></div>
-          <div class="box square"></div>
+        <div class="tile tile-inner">
+          <div class="tile hover"></div>
+          <div class="tile hover"></div>
+          <div class="tile hover"></div>
+          <div class="tile hover"></div>
         </div>
-        <div class="box box-inner">
-          <div class="box square"></div>
-          <div class="box square"></div>
-          <div class="box square"></div>
-          <div class="box square"></div>
+        <div class="tile tile-inner">
+          <div class="tile hover"></div>
+          <div class="tile hover"></div>
+          <div class="tile hover"></div>
+          <div class="tile hover"></div>
         </div>
       </div>
       <div id="right">
-        <div class="box box-inner">
-          <div class="box square"></div>
-          <div class="box square"></div>
-          <div class="box square"></div>
-          <div class="box square"></div>
+        <div class="tile tile-inner">
+          <div class="tile hover"></div>
+          <div class="tile hover"></div>
+          <div class="tile hover"></div>
+          <div class="tile hover"></div>
         </div>
-        <div class="box box-inner">
-          <div class="box square"></div>
-          <div class="box square"></div>
-          <div class="box square"></div>
-          <div class="box square"></div>
+        <div class="tile tile-inner">
+          <div class="tile hover"></div>
+          <div class="tile hover"></div>
+          <div class="tile hover"></div>
+          <div class="tile hover"></div>
         </div>
-        <div class="box box-inner">
-          <div class="box square"></div>
-          <div class="box square"></div>
-          <div class="box square"></div>
-          <div class="box square"></div>
+        <div class="tile tile-inner">
+          <div class="tile hover"></div>
+          <div class="tile hover"></div>
+          <div class="tile hover"></div>
+          <div class="tile hover"></div>
         </div>
-        <div class="box box-inner">
-          <div class="box square"></div>
-          <div class="box square"></div>
-          <div class="box square"></div>
-          <div class="box square"></div>
+        <div class="tile tile-inner">
+          <div class="tile hover"></div>
+          <div class="tile hover"></div>
+          <div class="tile hover"></div>
+          <div class="tile hover"></div>
         </div>
       </div>
     </div>
 
   </body>
-  
+
 </html>
