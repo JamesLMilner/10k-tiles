@@ -1,11 +1,10 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <style type="text/css">
 
+<head>
+    <style>
         html,
         body,
-        #tiles {
+        #content {
             width: 100%;
             height: 100%;
             overflow: hidden;
@@ -15,7 +14,7 @@
         body {
             animation: spin 100s linear infinite, colors 8s ease-out infinite;
         }
-        #tiles {
+        #content {
             opacity: 0.8
         }
         @-webkit-keyframes spin {
@@ -156,7 +155,7 @@
                 /* IE 10, Fx 16+, Op 12.1+ */
             }
         }
-        .tile {
+        .box {
             position: relative;
             display: inline-block;
             float: left;
@@ -164,7 +163,7 @@
             height: 50%;
             animation: colors 20s linear infinite;
         }
-        .hover:hover {
+        .square:hover {
             animation: grow 10s linear infinite;
             z-index: 100;
         }
@@ -181,7 +180,7 @@
             75% {
                 background-color: #ff6f69;
                 border-radius: 45%;
-                tile-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             }
             100% {
                 background-color: #ffcc5c;
@@ -202,78 +201,101 @@
             75% {
                 background-color: #ff6f69;
                 border-radius: 45%;
-                tile-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             }
             100% {
                 background-color: #ffcc5c;
                 border-radius: 0px;
             }
         }
-
     </style>
+</head>
 
-    <title>
-      10kb Tiles Examples
-    </title>
+<body>
+    <div id="content">
 
-  </head>
+        <div id="left">
 
-  <body>
-    <div id="t">
-      <div id="left">
-        <div class="tile tile-inner">
-          <div class="tile hover"></div>
-          <div class="tile hover"></div>
-          <div class="tile hover"></div>
-          <div class="tile hover"></div>
+            <div class="box">
+                <div class="box-inner">
+                    <div class="box square"></div>
+                    <div class="box square"></div>
+                    <div class="box square"></div>
+                    <div class="box square"></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="box-inner">
+                  <div class="box square"></div>
+                  <div class="box square"></div>
+                  <div class="box square"></div>
+                  <div class="box square"></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="box-inner">
+                  <div class="box square"></div>
+                  <div class="box square"></div>
+                  <div class="box square"></div>
+                  <div class="box square"></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="box-inner">
+                  <div class="box square"></div>
+                  <div class="box square"></div>
+                  <div class="box square"></div>
+                  <div class="box square"></div>
+                </div>
+            </div>
+
         </div>
-        <div class="tile tile-inner">
-          <div class="tile hover"></div>
-          <div class="tile hover"></div>
-          <div class="tile hover"></div>
-          <div class="tile hover"></div>
+
+        <div id="right">
+
+            <div class="box">
+                <div class="box-inner">
+                  <div class="box square"></div>
+                  <div class="box square"></div>
+                  <div class="box square"></div>
+                  <div class="box square"></div>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <div class="box-inner">
+                  <div class="box square"></div>
+                  <div class="box square"></div>
+                  <div class="box square"></div>
+                  <div class="box square"></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="box-inner">
+                  <div class="box square"></div>
+                  <div class="box square"></div>
+                  <div class="box square"></div>
+                  <div class="box square"></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="box-inner">
+                  <div class="box square"></div>
+                  <div class="box square"></div>
+                  <div class="box square"></div>
+                  <div class="box square"></div>
+                </div>
+            </div>
+
         </div>
-        <div class="tile tile-inner">
-          <div class="tile hover"></div>
-          <div class="tile hover"></div>
-          <div class="tile hover"></div>
-          <div class="tile hover"></div>
-        </div>
-        <div class="tile tile-inner">
-          <div class="tile hover"></div>
-          <div class="tile hover"></div>
-          <div class="tile hover"></div>
-          <div class="tile hover"></div>
-        </div>
-      </div>
-      <div id="right">
-        <div class="tile tile-inner">
-          <div class="tile hover"></div>
-          <div class="tile hover"></div>
-          <div class="tile hover"></div>
-          <div class="tile hover"></div>
-        </div>
-        <div class="tile tile-inner">
-          <div class="tile hover"></div>
-          <div class="tile hover"></div>
-          <div class="tile hover"></div>
-          <div class="tile hover"></div>
-        </div>
-        <div class="tile tile-inner">
-          <div class="tile hover"></div>
-          <div class="tile hover"></div>
-          <div class="tile hover"></div>
-          <div class="tile hover"></div>
-        </div>
-        <div class="tile tile-inner">
-          <div class="tile hover"></div>
-          <div class="tile hover"></div>
-          <div class="tile hover"></div>
-          <div class="tile hover"></div>
-        </div>
-      </div>
+
     </div>
-
-  </body>
+</body>
 
 </html>
