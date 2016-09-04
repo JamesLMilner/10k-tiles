@@ -30,11 +30,12 @@
             width: 50%;
             height: 50%;
             animation: colors 20s linear infinite;
+            border-radius: 10px;
         }
 
         .hover:hover {
             animation: grow 10s linear infinite;
-            z-index: 100;
+              box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
         }
 
         @-webkit-keyframes spin {
@@ -134,13 +135,13 @@
 
         @-webkit-keyframes grow {
             10% {
-                -webkit-transform: scale(0.9, 0.9);
+                -webkit-transform: scale(0.95, 0.95);
                 /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
 
-                -ms-transform: scale(0.9, 0.9);
+                -ms-transform: scale(0.95, 0.95);
                 /* IE 9 */
 
-                transform: scale(0.9, 0.9);
+                transform: scale(0.95, 0.95);
                 /* IE 10, Fx 16+, Op 12.1+ */
             }
             100% {
@@ -157,13 +158,13 @@
 
         @keyframes grow {
             10% {
-                -webkit-transform: scale(0.9, 0.9);
+                -webkit-transform: scale(0.95, 0.95);
                 /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
 
-                -ms-transform: scale(0.9, 0.9);
+                -ms-transform: scale(0.95, 0.95);
                 /* IE 9 */
 
-                transform: scale(0.9, 0.9);
+                transform: scale(0.95, 0.95);
                 /* IE 10, Fx 16+, Op 12.1+ */
             }
             100% {
@@ -181,11 +182,11 @@
         @-webkit-keyframes colors {
             0% {
                 background-color: #96ceb4;
-                border-radius: 0px;
+                
             }
             25% {
                 background-color: #ffeead;
-                border-radius: 5%;
+                /*border-radius: 5%;*/
             }
             75% {
                 background-color: #ff6f69;
@@ -194,18 +195,18 @@
             }
             100% {
                 background-color: #ffcc5c;
-                border-radius: 0px;
+
             }
         }
 
         @keyframes colors {
             0% {
                 background-color: #96ceb4;
-                border-radius: 0px;
+
             }
             25% {
                 background-color: #ffeead;
-                border-radius: 5%;
+                /*border-radius: 5%;*/
             }
             75% {
                 background-color: #ff6f69;
@@ -214,7 +215,7 @@
             }
             100% {
                 background-color: #ffcc5c;
-                border-radius: 0px;
+
             }
         }
     </style>
